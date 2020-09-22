@@ -1,0 +1,124 @@
+body {
+    background-color: #c4abc5;
+    font-family: sans-serif;
+}
+
+.app-wrapper {
+    height: 100vh;
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    overflow: auto;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+#newTaskInput {
+    width: 85%;
+    padding: 10px 80px 10px 10px;
+    border: 0;
+    height: 40px;
+    outline: none;
+}
+
+#addTask {
+    background: transparent;
+    border: none;
+    position: absolute;
+    right: 1px;
+    bottom: 1px;
+    top: 1px;
+    cursor: pointer;
+    outline: none;
+    color: cornflowerblue;
+    font-weight: bold;
+}
+
+.task-item {
+    background-color: #9c91d7;
+    list-style-type: none;
+    height: 60px;
+    padding: 0 10px 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #2C3E50;
+}
+
+.task-item:last-child {
+    border-radius: 0 0 5px 5px;
+}
+
+/*.task-item:nth-child(odd) {*/
+    /*background-color: #DEDEDE;*/
+/*}*/
+
+.todo-container {
+    width: 600px;
+}
+
+.todo-form {
+    position: relative;
+}
+
+.remove-btn {
+    background: transparent;
+    border: none;
+    color: #b40000;
+    font-weight: bold;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.task-text {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    display: inline-block;
+    width: 500px;
+    color: #ffffff;
+    font-size: 16px;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Todo</title>
+</head>
+<body>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <title>Todo</title>
+</head>
+<body>
+    <div class="app-wrapper">
+        <div class="todo-container">
+            <div class="todo-form">
+                <input
+                    type="text"
+                    id="newTaskInput"
+                    placeholder="Новая задача..."/>
+                <button id="addTask">Добавить</button>
+            </div>
+            <div class="todo-tasks-container">
+                <ul class="todo-tasks">
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
